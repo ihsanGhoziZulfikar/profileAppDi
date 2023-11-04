@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+  
+h2, h3 {
+  color: #DD2020;
+}
+  
+footer {
+  padding: 15px;
+  color: white;
+  background-color: #DD2020;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 80%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav img {
+  width: 100px;
+}
+
+nav {
+  background-color: white;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+  nav a{
+    display: none;
+  }
+  nav ul{
+    padding-left:10px;
+  }
+}
+ 
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex:1;
+}
+
+header {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+
+#reviewTable td{
+  padding-right: 10px;
+}
+
+.redSpan{
+  color:#DD2020;
+  font-weight: bold;
+}
+
+#asideTable{
+  text-align: left;
+}
+
+#asideTable td, #asideTable th{
+  vertical-align: top;
+
+}
+
+#gameSection{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gameSection img{
+  width: 250px;
+}
+
+#gameSection div{
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#gameSection figcaption{
+  margin: 10px;
+  font-weight: bold;
+}
+
+#gameSection p{
+  margin: 10px;
+  font-weight: bold;
+  color:#DD2020;
+}
